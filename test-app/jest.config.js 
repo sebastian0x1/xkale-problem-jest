@@ -1,0 +1,9 @@
+const { getJestProjects } = require('@nrwl/jest');
+
+module.exports = {
+  projects: getJestProjects(),
+  globalSetup: 'jest-preset-angular/global-setup',
+  collectCoverageFrom: ['**/*.ts'],
+  coverageReporters: ['html', 'text-summary'],
+  coverageDirectory: 'coverage',
+};
